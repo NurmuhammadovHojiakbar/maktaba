@@ -1,0 +1,151 @@
+/*WEB FONTS RELATED*/
+@font-face {
+  font-family: "Salsa";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/salsa-v12-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("../fonts/salsa-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*GLOBAL STYLES*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Salsa", "Arial", sans-serif;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.47);
+
+  background-image: url("../images/background.png");
+}
+
+/* Header  */
+.site-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 25px;
+  background: rgba( 255, 255, 255, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.0px );
+  -webkit-backdrop-filter: blur( 0.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.site-header__container{
+  max-width: 1115px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo{
+  margin-right: 30px;
+}
+/* search form  */
+.search-form{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.47);
+}
+.search-input{
+  width: 100px;
+  border: none;
+  background: transparent;
+  padding: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.search-input:focus{
+  width: 150px;
+}
+.submit{
+  width: 25px;
+  height: 25px;
+  background: transparent url("../images/search.png") no-repeat center center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+/* Site Main  */
+.site-main{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.site-main__corusel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#autoWidth{
+  height: 560px !important;
+  padding: 25px !important;
+}
+
+.card{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  background: rgba( 255, 255, 255, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.0px );
+  -webkit-backdrop-filter: blur( 0.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.book-image{
+  margin-bottom: 25px;
+}
+.card-details{
+  width: 210px;
+  text-align: center;
+  background: rgba( 255, 255, 255, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.0px );
+  -webkit-backdrop-filter: blur( 6.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 25px;
+}
+.download{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.47);
+  text-decoration: none;
+  background: rgba( 255, 255, 255, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.0px );
+  -webkit-backdrop-filter: blur( 6.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 45px;
+  padding: 9px 25px;
+}
+.download-image{
+  margin-left: 10px;
+}
+
+/* Footer   */
+.site-footer{
+  text-align: center;
+  background: rgba( 255, 255, 255, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.0px );
+  -webkit-backdrop-filter: blur( 0.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
